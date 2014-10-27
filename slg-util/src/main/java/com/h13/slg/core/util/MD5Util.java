@@ -1,4 +1,4 @@
-package com.h13.slg.util;
+package com.h13.slg.core.util;
 
 import java.io.File;
 import java.io.FileInputStream;

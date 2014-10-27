@@ -1,4 +1,4 @@
-package com.h13.slg;
+package com.h13.slg.core.log;
 
 import com.alibaba.fastjson.JSON;
 

@@ -1,6 +1,6 @@
-package com.h13.slg.util;
+package com.h13.slg.core.util;
 
-import com.h13.slg.RequestFatalException;
+import com.h13.slg.core.exception.RequestFatalException;
 
 public class SlgBeanUtils {
 
