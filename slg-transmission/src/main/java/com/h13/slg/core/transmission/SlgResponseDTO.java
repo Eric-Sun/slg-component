@@ -1,6 +1,8 @@
 package com.h13.slg.core.transmission;
 
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.Map;
 
 public class SlgResponseDTO {
@@ -84,5 +86,6 @@ public class SlgResponseDTO {
     public void setServerTime(long serverTime) {
         this.serverTime = serverTime;
     }
+
 }
 

@@ -1,5 +1,7 @@
 package com.h13.slg.core.transmission;
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.Map;
 
 /**
@@ -23,6 +25,8 @@ public class SlgRequestDTO {
         this.seq = seq;
         this.args = args;
     }
+
+
 
     public String getMod() {
         return mod;
@@ -63,4 +67,5 @@ public class SlgRequestDTO {
     public void setArgs(Map<String, Object> args) {
         this.args = args;
     }
+
 }

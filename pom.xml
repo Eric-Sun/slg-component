@@ -13,6 +13,7 @@
         <module>slg-exception</module>
         <module>slg-log</module>
         <module>slg-transmission</module>
+        <module>slg-config</module>
     </modules>
 
 

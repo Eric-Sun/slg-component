@@ -1,5 +1,7 @@
 package com.h13.slg.core.transmission;
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.HashMap;
 
 /**
@@ -22,4 +24,5 @@ public class SlgData extends HashMap<String, Object> {
         put(key, value);
         return this;
     }
+
 }
