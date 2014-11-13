@@ -18,7 +18,7 @@ public class SlgLoggerEntity {
     public static String PROGRAM_ERROR = "error";
 
 
-    private String type;
+    private String logType;
     private String mod;
     private String act;
     private String content;
@@ -40,8 +40,8 @@ public class SlgLoggerEntity {
         return new SlgLoggerEntity(REQUEST_LOG, mod, act, uid, content);
     }
 
-    private SlgLoggerEntity(String type, String mod, String act, long uid, String content, Throwable throwable) {
-        this.type = type;
+    private SlgLoggerEntity(String logType, String mod, String act, long uid, String content, Throwable throwable) {
+        this.logType = logType;
         this.mod = mod;
         this.act = act;
         this.uid = uid;
@@ -49,8 +49,8 @@ public class SlgLoggerEntity {
         this.throwable = throwable;
     }
 
-    private SlgLoggerEntity(String type, String mod, String act, long uid, String content) {
-        this.type = type;
+    private SlgLoggerEntity(String logType, String mod, String act, long uid, String content) {
+        this.logType = logType;
         this.mod = mod;
         this.act = act;
         this.uid = uid;
@@ -74,12 +74,12 @@ public class SlgLoggerEntity {
         SlgLoggerEntity.PROGRAM_LOG = PROGRAM_LOG;
     }
 
-    public String getType() {
-        return type;
+    public String getLogType() {
+        return logType;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setLogType(String logType) {
+        this.logType = logType;
     }
 
     public SlgLoggerEntity addParam(String key, Object value) {

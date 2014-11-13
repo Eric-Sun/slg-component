@@ -14,7 +14,7 @@ public class SlgLogger {
 
 
     public static void info(SlgLoggerEntity obj) {
-        Logger log = LoggerFactory.getLogger("slg." + obj.getType());
+        Logger log = LoggerFactory.getLogger("slg." + obj.getMod());
         log.info(obj.toString());
     }
 
@@ -24,7 +24,7 @@ public class SlgLogger {
      * @param obj
      */
     public static void error(SlgLoggerEntity obj) {
-        Logger log = LoggerFactory.getLogger("slg." + obj.getType());
+        Logger log = LoggerFactory.getLogger("slg." + obj.getMod());
         log.error(obj.toString(), obj.getThrowable());
     }
 
@@ -34,13 +34,13 @@ public class SlgLogger {
      * @param obj
      */
     public static void warn(SlgLoggerEntity obj) {
-        Logger log = LoggerFactory.getLogger("slg." + obj.getType());
+        Logger log = LoggerFactory.getLogger("slg." + obj.getMod());
         log.warn(obj.toString());
 
     }
 
     public static void debug(SlgLoggerEntity obj) {
-        Logger log = LoggerFactory.getLogger("slg." + obj.getType());
+        Logger log = LoggerFactory.getLogger("slg." + obj.getMod());
         if (log.isDebugEnabled()) {
             log.debug(obj.toString());
         }
